@@ -1,6 +1,8 @@
 const inquirer = require("inquirer");
-const generateMarkdown = require("./utils/generateMarkdown.js");
 const fs = require("fs");
+const util = require("util");
+const generateMarkdown = require("./utils/generateMarkdown.js");
+const writeFileAsync = util.promisify(fs.writeFile);
 
 // array of questions for user
 const promptQuestions = () => {
@@ -33,16 +35,16 @@ const promptQuestions = () => {
     },
     {
       type: "confirm",
-      name: "confirmInstallInstructions",
+      name: "confirmInstallation",
       message: "Are there any installation instructions?",
       default: true,
     },
     {
       type: "input",
-      name: "installInstructions",
+      name: "installation",
       message: "What are the installation instructions? (Required)",
-      when: ({ confirmInstallInstructions }) => {
-        if (confirmInstallInstructions) {
+      when: ({ confirmInstallation }) => {
+        if (confirmInstallation) {
           return true;
         } else {
           return false;
@@ -97,7 +99,7 @@ const promptQuestions = () => {
       type: "list",
       name: "license",
       message: "What license is being used for this project? (Required)",
-      choices: ["Apache", "Academic", "GNU", "ISC", "MIT", "Mozilla", "Open"],
+      choices: ["Apache", "GNU", "ISC", "MIT", "Open", "No Liscense"],
     },
     {
       type: "input",
@@ -127,23 +129,26 @@ const promptQuestions = () => {
     },
     {
       type: "input",
-      name: "problems",
+      name: "questions",
       message:
-        "What can be done if someone has issues with your project? (Required)",
+        "What can be done if someone has questions about your project? (Required)",
     },
   ]);
 };
 
-promptQuestions();
+// function to initialize program
+async function init() {
+    try {
+        // Ask user questions and generate responses
+        const data = await promptQuestions();
+        const generateData = generateMarkdown(data);
+        // function to write README file
+        await writeFileAsync("./dist/README.md", generateData);
+        console.log("README.md file successuflly written!");
+    } catch (err) {
+        console.log(err);
+    }
+}
 
-// // function to write README file
-// function writeToFile(fileName, data) {
-// }
-
-// // function to initialize program
-// function init() {
-
-// }
-
-// // function call to initialize program
-// init();
+// function call to initialize program
+init();
