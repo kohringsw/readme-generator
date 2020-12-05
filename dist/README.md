@@ -1,11 +1,11 @@
 
   
-  # README Generator
+  # dalkjdfk
 
-  ![badge](https://img.shields.io/badge/license-No Liscense-brightgreen)
+  ![badge](https://img.shields.io/badge/license-MIT-brightgreen)
 
   ## Description
-  This application generates a quality README.md file that includes the title of my project, a brief description, a table of contents, installation instructions, usage for the project, contributions, tests, the license that is covering the project, as well as a way to ask questions about the project.
+  adlsfkjadflkjajkjdkljasdl;kfj;al
 
   ## Table of Contents
   - [Description](#description)
@@ -17,21 +17,21 @@
   - [Questions](#questions)
 
   ## Installation Instructions
-  npm install required; inquirer install required
+  undefined
 
   ## Usage
-  This project is used for generating README.md files for any of your development projects.
+  alksdjlkfaj
 
   ## Contributions
-  Shelby Kohring
+  Shladhflkads;
 
   ## Tests
   undefined
 
-  ## License ![badge](https://img.shields.io/badge/license-No Liscense-brightgreen)
-  This application is covered under the No Liscense license.
+  ## License ![badge](https://img.shields.io/badge/license-MIT-brightgreen)
+  This application is covered under the MIT license.
 
   ## Questions
   If you have questions about this application: 
-  - :octocat: Find me on GitHub (kohringsw) or 
-  - :email: Email me at kohringsw@gmail.com.
+  - :octocat: Find me on GitHub (adkjfklasdj;lkj) or 
+  - :email: Email me at alskdjflkj;a.
