@@ -34,19 +34,17 @@ const promptQuestions = () => {
       },
     },
     {
-      type: "confirm",
-      name: "confirmInstallation",
-      message: "Are there any installation instructions?",
-      default: true,
-    },
-    {
       type: "input",
       name: "installation",
-      message: "What are the installation instructions? (Required)",
-      when: ({ confirmInstallation }) => {
-        if (confirmInstallation) {
+      message:
+        "What are the installation instructions? If there aren't any enter 'None'. (Required)",
+      validate: (installationInput) => {
+        if (installationInput) {
           return true;
         } else {
+          console.log(
+            "Please enter the installation instructions? If there aren't any enter 'None'."
+          );
           return false;
         }
       },
@@ -78,19 +76,15 @@ const promptQuestions = () => {
       },
     },
     {
-      type: "confirm",
-      name: "confirmTests",
-      message: "Are there any tests for this project?",
-      default: true,
-    },
-    {
       type: "input",
       name: "tests",
-      message: "What kind of testing can be done for your project? (Required)",
-      when: ({ confirmTests }) => {
-        if (confirmTests) {
+      message:
+        "What kind of testing can be done for your project? If there aren't any enter 'None'. (Required)",
+      validate: (testsInput) => {
+        if (testsInput) {
           return true;
         } else {
+          console.log("Please enter contributors!");
           return false;
         }
       },
@@ -99,12 +93,12 @@ const promptQuestions = () => {
       type: "list",
       name: "license",
       message: "What license is being used for this project? (Required)",
-      choices: ["Apache", "GNU", "ISC", "MIT", "Open", "No Liscense"],
+      choices: ["Apache", "GNU", "ISC", "MIT", "Open"],
     },
     {
       type: "input",
       name: "username",
-      message: "What is your GitHub username? (Required)",
+      message: "What is your GitHub username if someone needs more information about your project? (Required)",
       validate: (usernameInput) => {
         if (usernameInput) {
           return true;
@@ -117,7 +111,7 @@ const promptQuestions = () => {
     {
       type: "input",
       name: "email",
-      message: "What is your email address? (Required)",
+      message: "What is your email address if someone needs to contact you with questions? (Required)",
       validate: (emailInput) => {
         if (emailInput) {
           return true;
@@ -127,27 +121,21 @@ const promptQuestions = () => {
         }
       },
     },
-    {
-      type: "input",
-      name: "questions",
-      message:
-        "What can be done if someone has questions about your project? (Required)",
-    },
   ]);
 };
 
 // function to initialize program
 async function init() {
-    try {
-        // Ask user questions and generate responses
-        const data = await promptQuestions();
-        const generateData = generateMarkdown(data);
-        // function to write README file
-        await writeFileAsync("./dist/README.md", generateData);
-        console.log("README.md file successuflly written!");
-    } catch (err) {
-        console.log(err);
-    }
+  try {
+    // Ask user questions and generate responses
+    const data = await promptQuestions();
+    const generateData = generateMarkdown(data);
+    // function to write README file
+    await writeFileAsync("./dist/README.md", generateData);
+    console.log("README.md file successuflly written!");
+  } catch (err) {
+    console.log(err);
+  }
 }
 
 // function call to initialize program

@@ -35,8 +35,8 @@ function generateMarkdown(data) {
 
   ## Questions
   If you have questions about this application: 
-  - :octocat: Find me on GitHub (${data.username}) or 
-  - :email: Email me at ${data.email}.
+  - Find me on [GitHub](https://github.com/${data.username}) or 
+  - Email me at [${data.email}](mailto:${data.email})
 `;
 }
 
