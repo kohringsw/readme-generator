@@ -17,7 +17,7 @@
   - [Questions](#questions)
 
   ## Installation 
-  Required Installation: npm and npm inquirer 
+  Required Installation: npm and npm inquirer
 
   ## Usage
   Generating README.md files for any development projects
