@@ -2,10 +2,10 @@
   
   # README Generator
 
-  ![badge](https://img.shields.io/badge/license-MIT-brightgreen)
+  ![badge](https://img.shields.io/badge/license-ISC-brightgreen)
 
   ## Description
-  README Generator
+  This is an application that generates README.md files based on user input. Using nmp inquirer, the user is prompted to answer questions that will create a high quality README file for their projects including prompts to enter the project title, a brief description, installation instructions, project usage, contributions made to the project, andy tests that can be run, a license covering the project and GitHub username and email address in order to be contacted for more information and questions. 
 
   ## Table of Contents
   - [Description](#description)
@@ -17,10 +17,10 @@
   - [Questions](#questions)
 
   ## Installation Instructions
-  - npm install required <br/> - inquirer install required
+  Required npm install and npm inquirer install.
 
   ## Usage
-  Generating README files
+  It generates README files for any of your development projects.
 
   ## Contributions Made by
   Shelby Kohring
@@ -28,8 +28,8 @@
   ## Tests
   None
 
-  ## License ![badge](https://img.shields.io/badge/license-MIT-brightgreen)
-  This application is covered under the MIT license.
+  ## License ![badge](https://img.shields.io/badge/license-ISC-brightgreen)
+  This application is covered under the ISC license.
 
   ## Questions
   If you have questions about this application: 
