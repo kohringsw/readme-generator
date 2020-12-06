@@ -1,11 +1,11 @@
 
   
-  # adlkjdkf
+  # README Generator
 
-  ![badge](https://img.shields.io/badge/license-GNU-brightgreen)
+  ![badge](https://img.shields.io/badge/license-MIT-brightgreen)
 
   ## Description
-  as;dlkfja
+  This is an application that generates README.md files based on user input. Using nmp inquirer, the user is prompted to answer questions that will create a high quality README file for their projects including prompts to enter the project title, a brief description, installation instructions, project usage, contributions made to the project, andy tests that can be run, a license covering the project and GitHub username and email address in order to be contacted for more information and questions. 
 
   ## Table of Contents
   - [Description](#description)
@@ -17,21 +17,21 @@
   - [Questions](#questions)
 
   ## Installation 
-  ddafksdj;fa
+  Required Installation: npm and npm inquirer
 
   ## Usage
-  dakjf;kjda
+  Generating README files for any development projects
 
   ## Contributors
   undefined
 
   ## Tests
-  dlakj;dklf
+  None
 
   ## License 
-  ![badge](https://img.shields.io/badge/license-GNU-brightgreen) This application is covered under the GNU license.
+  ![badge](https://img.shields.io/badge/license-MIT-brightgreen) This application is covered under the MIT license.
 
   ## Questions
   If you have questions about this application: 
-  - Find me on [GitHub: klaj;skldjf](https://github.com/klaj;skldjf) or 
-  - Email me at [lkja;lkjfsda](mailto:lkja;lkjfsda)
+  - Find me on [GitHub: kohringsw](https://github.com/kohringsw) or 
+  - Email me at [kohringsw@gmail.com](mailto:kohringsw@gmail.com)
