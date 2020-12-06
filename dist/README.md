@@ -17,13 +17,13 @@
   - [Questions](#questions)
 
   ## Installation 
-  Required Installation: npm and npm inquirer
+  Required Installation: npm and npm inquirer 
 
   ## Usage
-  Generating README files for any development projects
+  Generating README.md files for any development projects
 
   ## Contributors
-  undefined
+  Shelby Kohring
 
   ## Tests
   None
