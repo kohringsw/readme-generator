@@ -24,7 +24,7 @@ function generateMarkdown(data) {
   ## Usage
   ${data.usage}
 
-  ## Contributions
+  ## Contributions Made by
   ${data.contributions}
 
   ## Tests
@@ -35,7 +35,7 @@ function generateMarkdown(data) {
 
   ## Questions
   If you have questions about this application: 
-  - Find me on [GitHub](https://github.com/${data.username}) or 
+  - Find me on [GitHub: ${data.username}](https://github.com/${data.username}) or 
   - Email me at [${data.email}](mailto:${data.email})
 `;
 }

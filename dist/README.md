@@ -5,7 +5,7 @@
   ![badge](https://img.shields.io/badge/license-MIT-brightgreen)
 
   ## Description
-  This application generates a README.md file based on answers provided from a user prompt in command line. It includes prompts to enter a description, installation instructions, usage for the project, contributions, any testing available, what kind of license covers the project, and how to contact the author of the project via GitHub or email. All of these sections also generate a table of contents. 
+  README Generator
 
   ## Table of Contents
   - [Description](#description)
@@ -17,12 +17,12 @@
   - [Questions](#questions)
 
   ## Installation Instructions
-  npm install required; inquirer install required
+  - npm install required <br/> - inquirer install required
 
   ## Usage
-  It can be used to generate high quality README.md files for any development projects. 
+  Generating README files
 
-  ## Contributions
+  ## Contributions Made by
   Shelby Kohring
 
   ## Tests
@@ -33,5 +33,5 @@
 
   ## Questions
   If you have questions about this application: 
-  - Find me on [GitHub](https://github.com/kohringsw) or 
+  - Find me on [GitHub: kohringsw](https://github.com/kohringsw) or 
   - Email me at [kohringsw@gmail.com](mailto:kohringsw@gmail.com)
