@@ -64,10 +64,10 @@ const promptQuestions = () => {
     },
     {
       type: "input",
-      name: "contributions",
+      name: "contributors",
       message: "Who is contributing to this project? (Required)",
-      validate: (contributionsInput) => {
-        if (contributionsInput) {
+      validate: (contributorsInput) => {
+        if (contributorsInput) {
           return true;
         } else {
           console.log("Please enter contributors!");
